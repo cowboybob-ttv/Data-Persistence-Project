@@ -14,6 +14,7 @@ public class SavedData : MonoBehaviour
 
     private void Awake()
     {
+        Debug.Log(Application.persistentDataPath);
         if (Instance != null)
         {
             Destroy(gameObject);
